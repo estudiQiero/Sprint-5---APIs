@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="estil.css">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+		<title>Acudits</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Autour+One:400&display=swap">
+	</head>
+	<body class="p-3">
+		<header id="IT-cap" class=" w-100">
+		</header>
+		<div id="IT-doodle">
+			<css-doodle>
+				:doodle {
+				@grid: 20 / 100vmax;
+				background: #f6d740;
+				font-family: sans-serif;
+				overflow: hidden;
+				}
+				:after {
+				content: \@hex.@r(0x2500, 0x257f);
+				color: hsla(@r360, 70%, 70%, @r.9);
+				font-size: 8vmin;
+				}
+</css-doodle>
+		</div>
+		<div class="align-items-center container d-flex flex-column justify-content-center vh-100">
+			<div class="row w-100">
+				<div class="align-items-center col-md-8 d-flex flex-column justify-content-center ml-auto mr-auto pb-4 pt-4 row w-100" id="IT-contAcudit">
+					<h1 class="mb-3 mt-3">l&apos;acudit del dia!</h1>
+					<button id="botoAcudit" class="IT-button w-50" type="button" onclick="sigChiste()">Explica'm un xissst!
+</button>
+					<div id="nuevoChiste" class="mb-2 mt-2 pl-4 pr-4 w-100"></div>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/css-doodle@0.14.2/css-doodle.min.js"></script>
+		<script src="js/codi.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</body>
+</html>

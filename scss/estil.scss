@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    font-family: 'Autour One', cursive;
+}
+
+$blanc: #fff;
+$blau: rgb(0, 229, 255);
+$rosa: rgb(246, 147, 147);
+$groc: #f6d740;
+
+body {
+    padding: 2em;
+    position: relative;
+
+    #IT-cap {
+        position: absolute;
+        height: 200px;
+        z-index: 1000;
+        background-color: $groc;
+        left: 0;
+        top: 0;
+    }
+
+    #IT-doodle {
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+    }
+
+    #IT-contAcudit {
+        background-color: rgba($rosa, .8);
+        border-radius: 1rem;
+        border: 3px darken($rosa, 10%) solid;
+
+        h1 {
+            color: $groc;
+        }
+
+        .IT-button {
+            min-width: 140px;
+            margin: 2rem 0;
+            padding: 1rem 2rem;
+            color: darken($blau, 30%);
+            background-color: darken($blau, 10%);
+            border-radius: 100px;
+            border: 2px darken($blau, 20%) solid;
+            transition: .2s all ease-in-out;
+
+            font: {
+                size: .9rem;
+                weight: 400;
+            }
+
+            text: {
+                align: center;
+            }
+
+            &:hover {
+                background-color: $blau;
+                color: darken($blau, 20%);
+                transform: scale(1.2);
+            }
+        }
+
+        #nuevoChiste {
+            color: $blanc;
+            text-align: center;
+            font-family: 'Autour One', cursive;
+            font-size: 1.5em;
+            font-weight: 400;
+        }
+    }
+}
