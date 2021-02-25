@@ -13,8 +13,12 @@ $rosa: rgb(246, 147, 147);
 $groc: #f6d740;
 
 body {
-    padding: 2em;
     position: relative;
+    background-color: $groc;
+    width: 100vw;
+    overflow: hidden;
+    
+
 
     #IT-cap {
         position: absolute;
@@ -26,16 +30,28 @@ body {
     }
 
     #IT-doodle {
+        height: 100vh;
         position: absolute;
         left: 0%;
         right: 0%;
         top: 0%;
         bottom: 0%;
+        z-index: 0;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            color: #fff;
+        }
     }
 
     #IT-contAcudit {
         background-color: rgba($rosa, .8);
-        border-radius: 1rem;
+        border-radius: .5rem;
         border: 3px darken($rosa, 10%) solid;
 
         h1 {

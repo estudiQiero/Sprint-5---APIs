@@ -1,4 +1,5 @@
 const url = 'https://icanhazdadjoke.com';
+const nouXist = document.querySelector('#nuevoChiste');
 
 function sigChiste() {
     fetch(url, {
@@ -11,7 +12,8 @@ function sigChiste() {
         .then(response => response.json())
         .then(response => {
             console.log(response);
-            document.querySelector('#nuevoChiste').textContent = response.joke;
+            nouXist.textContent = response.joke;
+            // nouXist.innerHTML = `${response.joke}
         }
         )
 }

@@ -8,8 +8,10 @@
 }
 
 body {
-  padding: 2em;
   position: relative;
+  background-color: #f6d740;
+  width: 100vw;
+  overflow: hidden;
 }
 body #IT-cap {
   position: absolute;
@@ -20,15 +22,26 @@ body #IT-cap {
   top: 0;
 }
 body #IT-doodle {
+  height: 100vh;
   position: absolute;
   left: 0%;
   right: 0%;
   top: 0%;
   bottom: 0%;
+  z-index: 0;
+}
+body #IT-doodle h1,
+body #IT-doodle h2,
+body #IT-doodle h3,
+body #IT-doodle h4,
+body #IT-doodle h5,
+body #IT-doodle h6,
+body #IT-doodle p {
+  color: #fff;
 }
 body #IT-contAcudit {
   background-color: rgba(246, 147, 147, 0.8);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   border: 3px #f26464 solid;
 }
 body #IT-contAcudit h1 {
