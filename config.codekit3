@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34018",
   "files" : {
+    "\/chistesCortos.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/chistesCortos.txt",
+      "oF" : 0
+    },
     "\/estil.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -42,6 +50,14 @@
       "oAP" : "\/index.html",
       "oF" : 1
     },
+    "\/js\/acudits.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/js\/acudits-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/js\/codi.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -60,6 +76,22 @@
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
+    },
+    "\/rsc\/xists.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/rsc\/xists.txt",
+      "oF" : 0
+    },
+    "\/rsc\/xists.xlsx" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/rsc\/xists.xlsx",
+      "oF" : 0
     },
     "\/scss\/estil.scss" : {
       "aP" : 0,
