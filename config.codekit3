@@ -21,6 +21,19 @@
       "oF" : 2,
       "pg" : 0
     },
+    "\/img\/scale.jpg" : {
+      "ft" : 16384,
+      "iS" : 85399,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/scale.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -28,6 +41,14 @@
       "oA" : 1,
       "oAP" : "\/index.html",
       "oF" : 1
+    },
+    "\/js\/acudits.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/js\/acudits-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
     },
     "\/js\/codi.js" : {
       "bF" : 0,
@@ -47,6 +68,38 @@
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
+    },
+    "\/rsc\/chistesCortos.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/rsc\/chistesCortos.txt",
+      "oF" : 0
+    },
+    "\/rsc\/xists.csv" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/rsc\/xists.csv",
+      "oF" : 0
+    },
+    "\/rsc\/xists.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/rsc\/xists.txt",
+      "oF" : 0
+    },
+    "\/rsc\/xists.xlsx" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/rsc\/xists.xlsx",
+      "oF" : 0
     },
     "\/scss\/estil.scss" : {
       "aP" : 0,

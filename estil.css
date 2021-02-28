@@ -1,61 +1,162 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   border: 0;
-  font-family: "Autour One", cursive;
-}
+  font-family: 'Autour One', cursive; }
 
 body {
-  padding: 2em;
-  position: relative;
-}
-body #IT-cap {
-  position: absolute;
-  height: 200px;
-  z-index: 1000;
-  background-color: #f6d740;
-  left: 0;
-  top: 0;
-}
-body #IT-doodle {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-}
-body #IT-contAcudit {
-  background-color: rgba(246, 147, 147, 0.8);
-  border-radius: 1rem;
-  border: 3px #f26464 solid;
-}
-body #IT-contAcudit h1 {
-  color: #f6d740;
-}
-body #IT-contAcudit .IT-button {
-  min-width: 140px;
-  margin: 2rem 0;
-  padding: 1rem 2rem;
-  color: #005c66;
-  background-color: #00b7cc;
-  border-radius: 100px;
-  border: 2px #008999 solid;
-  transition: 0.2s all ease-in-out;
-  font-size: 0.9rem;
-  font-weight: 400;
-  text-align: center;
-}
-body #IT-contAcudit .IT-button:hover {
-  background-color: #00e5ff;
-  color: #008999;
-  transform: scale(1.2);
-}
-body #IT-contAcudit #nuevoChiste {
-  color: #fff;
-  text-align: center;
-  font-family: "Autour One", cursive;
-  font-size: 1.5em;
-  font-weight: 400;
-}
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  body #seccCont {
+    height: 90vh;
+    max-height: 900px;
+    width: 90vw;
+    min-width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: url(/img/scale.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-pg-main: "cs-source-2";
+    background-pg-id: 5;
+    opacity: 1;
+    border-radius: 2em; }
+    body #seccCont .backImage {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.5); }
+    body #seccCont #IT-dadesTemps {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      min-width: 100px;
+      min-height: 100px;
+      border-top: 3px #8e8e8e solid;
+      border-bottom: 3px #8e8e8e solid;
+      padding: 1em 0;
+      margin: auto; }
+      body #seccCont #IT-dadesTemps #condis {
+        font-size: 1em;
+        text-align: center;
+        color: #8e8e8e; }
+      body #seccCont #IT-dadesTemps #temperatura {
+        font-size: 2em;
+        text-align: center;
+        color: #8e8e8e; }
+      body #seccCont #IT-dadesTemps #ubicacio {
+        text-align: center;
+        color: #8e8e8e; }
+    body #seccCont #IT-contAcudit {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 4em; }
+      body #seccCont #IT-contAcudit .superior {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding-top: 15%; }
+        body #seccCont #IT-contAcudit .superior h1 {
+          font-size: 3em;
+          color: #ffea00;
+          text-shadow: 0 3px 5px #000;
+          text-align: center;
+          text-pg-main: "cs-source-2";
+          text-pg-id: 2; }
+        body #seccCont #IT-contAcudit .superior .IT-button {
+          min-width: 140px;
+          margin: 2rem 0;
+          padding: 1rem 2rem;
+          color: #065606;
+          background-color: #11e411;
+          border-radius: 100px;
+          border: 4px #ffea00 solid;
+          opacity: .85;
+          -webkit-transition: .2s all ease-in-out;
+          -o-transition: .2s all ease-in-out;
+          transition: .2s all ease-in-out;
+          font-size: 1.8rem;
+          font-weight: 400;
+          font-pg-main: "cs-source-2";
+          font-pg-id: 15;
+          text-align: center; }
+          body #seccCont #IT-contAcudit .superior .IT-button:hover {
+            background-color: #11e411;
+            color: #0a850a;
+            -webkit-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                    transform: scale(1.2);
+            opacity: 1; }
+      body #seccCont #IT-contAcudit #nuevoChiste {
+        position: relative;
+        margin-top: 1.3em;
+        font-size: 1.9em;
+        color: #ffea00;
+        text-shadow: 0 3px 5px #000;
+        text-align: center;
+        text-pg-main: "cs-source-2";
+        text-pg-id: 2;
+        text-align: center;
+        text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.8), 0px 8px 13px rgba(0, 0, 0, 0.6), 0px -3px 6px rgba(0, 0, 0, 0.4);
+        font-family: 'Autour One', cursive;
+        font-weight: 400; }

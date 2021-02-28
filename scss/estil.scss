@@ -7,73 +7,147 @@
     font-family: 'Autour One', cursive;
 }
 
+// VARIABLES de COLOR
 $blanc: #fff;
-$blau: rgb(0, 229, 255);
+$gris: rgb(142, 142, 142);
+$verd: rgb(17, 228, 17);
 $rosa: rgb(246, 147, 147);
-$groc: #f6d740;
+$groc: #ffea00;
+
+// MIXINS
+@mixin flexCentrat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin colorText($size, $color) {
+    font-size: $size;
+    color: $color;
+
+    text: {
+        shadow: 0 3px 5px #000;
+        align: center;
+    }
+
+}
 
 body {
-    padding: 2em;
-    position: relative;
+    height: 100vh;
+    @include flexCentrat;
 
-    #IT-cap {
-        position: absolute;
-        height: 200px;
-        z-index: 1000;
-        background-color: $groc;
-        left: 0;
-        top: 0;
-    }
+    #seccCont {
+        height: 90vh;
+        max-height: 900px;
+        width: 90vw;
+        min-width: 300px;
+        // max-width: 800px;
 
-    #IT-doodle {
-        position: absolute;
-        left: 0%;
-        right: 0%;
-        top: 0%;
-        bottom: 0%;
-    }
+        @include flexCentrat;
 
-    #IT-contAcudit {
-        background-color: rgba($rosa, .8);
-        border-radius: 1rem;
-        border: 3px darken($rosa, 10%) solid;
-
-        h1 {
-            color: $groc;
+        background: {
+            image: url(/img/scale.jpg);
+            size: 100%;
+            repeat: no-repeat;
+            position: left bottom;
         }
 
-        .IT-button {
-            min-width: 140px;
-            margin: 2rem 0;
-            padding: 1rem 2rem;
-            color: darken($blau, 30%);
-            background-color: darken($blau, 10%);
-            border-radius: 100px;
-            border: 2px darken($blau, 20%) solid;
-            transition: .2s all ease-in-out;
+        opacity: 1;
 
-            font: {
-                size: .9rem;
-                weight: 400;
+        border-radius: 2em;
+
+        .backImage {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.10);
+        }
+
+        // TEMPS
+        #IT-dadesTemps {
+            @include flexCentrat();
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            min-width: 100px;
+            min-height: 100px;
+            // background-color: rgb(176, 176, 176);
+            // border-radius: .5rem;
+            border-top: 3px $gris solid;
+            border-bottom: 3px $gris solid;
+            padding: 1em 0;
+            margin: auto;
+
+            #condis {
+                font-size: 1em;
+                text-align: center;
+                color: $gris;
             }
 
-            text: {
-                align: center;
+            #temperatura {
+                font-size: 2em;
+                text-align: center;
+                color: $gris;
             }
 
-            &:hover {
-                background-color: $blau;
-                color: darken($blau, 20%);
-                transform: scale(1.2);
+            #ubicacio {
+                text-align: center;
+                color: $gris;
             }
         }
 
-        #nuevoChiste {
-            color: $blanc;
-            text-align: center;
-            font-family: 'Autour One', cursive;
-            font-size: 1.5em;
-            font-weight: 400;
+        // ACUDIT
+        #IT-contAcudit {
+            @include flexCentrat;
+            padding: 4em;
+
+            .superior {
+                @include flexCentrat();
+                padding-top: 15%;
+
+                h1 {
+                    @include colorText(3em, $groc);
+                }
+
+                .IT-button {
+                    min-width: 140px;
+                    margin: 2rem 0;
+                    padding: 1rem 2rem;
+                    color: darken($verd, 30%);
+                    background-color: $verd;
+                    border-radius: 100px;
+                    border: 4px $groc solid;
+                    opacity: .85;
+                    transition: .2s all ease-in-out;
+
+                    font: {
+                        size: 1.8rem;
+                        weight: 400;
+                    }
+
+                    text-align: center;
+
+                    &:hover {
+                        background-color: $verd;
+                        color: darken($verd, 20%);
+                        transform: scale(1.2);
+                        opacity: 1;
+                    }
+                }
+            }
+
+
+            #nuevoChiste {
+                position: relative;
+                margin-top: 1.3em;
+                @include colorText(1.9em, $groc);
+                text-align: center;
+                text-shadow: 0px 4px 3px rgb(0 0 0 / 80%),
+                    0px 8px 13px rgb(0 0 0 / 40%),
+                    0px -2px 4px rgb(0 0 0 / 20%);
+                font-family: 'Autour One', cursive;
+                font-weight: 400;
+            }
         }
     }
 }
