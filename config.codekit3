@@ -9,14 +9,6 @@
   ],
   "creatorBuild" : "34018",
   "files" : {
-    "\/chistesCortos.txt" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/chistesCortos.txt",
-      "oF" : 0
-    },
     "\/estil.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -76,6 +68,22 @@
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
+    },
+    "\/rsc\/chistesCortos.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/rsc\/chistesCortos.txt",
+      "oF" : 0
+    },
+    "\/rsc\/xists.csv" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/rsc\/xists.csv",
+      "oF" : 0
     },
     "\/rsc\/xists.txt" : {
       "cB" : 0,
